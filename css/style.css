@@ -87,3 +87,5 @@ body {
           border: none;
           cursor: pointer;
           outline: none; }
+      body .container #tasks .completed {
+        text-decoration: line-through; }

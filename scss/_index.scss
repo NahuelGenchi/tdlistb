@@ -87,6 +87,9 @@ body {
                     outline: none;
                 }
             }
+            .completed {
+                text-decoration: line-through;
+            }
         }
     }
 }

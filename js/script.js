@@ -18,5 +18,11 @@ document.querySelector("#push").onclick = () => {
                 this.parentNode.remove();
             }
         }
+        let tasks = document.querySelectorAll(".task");
+        for (let i = 0; i < tasks.length; i++) {
+            tasks[i].onclick = function() {
+                this.classList.toggle('completed');
+            }
+        }
     };
 };
