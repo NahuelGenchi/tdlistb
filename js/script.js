@@ -1,12 +1,16 @@
 document.querySelector("#push").onclick = () => {
     if (document.querySelector("#newTask input").value.length == 0) {
-        Swal.fire({
-            backdrop: 'linear-gradient(135deg,#8052ec,#d161ff)',
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Try to write a task first!',
-            width: 300,
-            heading: 50,
-          })
-    }
+        alert("Try to write a task first!");
+    } else {
+        document.querySelector("#tasks").innerHTML += `
+            <div class="task">
+                <span id="taskName">
+                    ${document.querySelector("#newTask input").value}
+                </span>
+                <button class="delete">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </button>
+            </div>
+        `;
+    };
 };
