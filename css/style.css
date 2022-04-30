@@ -11,15 +11,15 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(135deg, #8052ec, #d161ff); }
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  display: flex;
+  align-items: center; }
   body .container {
-    width: 40%;
-    min-width: 450px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding: 30px 40px; }
+    width: 85%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
     body .container #newTask {
       position: relative;
       background-color: #fff;
@@ -38,8 +38,7 @@ body {
         position: relative;
         border-radius: 5px; }
       body .container #newTask input:focus {
-        outline: none;
-        background-color: #8052ec; }
+        outline: none; }
       body .container #newTask button {
         position: relative;
         float: right;
@@ -47,11 +46,14 @@ body {
         height: 45px;
         border-radius: 5px;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 1.3rem;
         background-color: #8052ec;
         border: none;
         color: #fff;
-        cursor: pointer; }
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
     body .container #tasks {
       background-color: #fff;
       padding: 30px 20px;
@@ -59,7 +61,9 @@ body {
       border-radius: 10px;
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
       width: 100%;
-      position: relative; }
+      position: relative;
+      max-height: 300px;
+      overflow-y: auto; }
       body .container #tasks .task {
         background-color: #fff;
         height: 50px;
