@@ -8,11 +8,13 @@ body {
     display: flex;
     align-items: center;
     .container {
+        height: 85%;
         width: 85%;
         max-width: 700px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         #newTask {
             position: relative;
             background-color: #fff;
